@@ -1,0 +1,8 @@
+services:
+  frps:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - 7000:7000 # 7000 port from example frps.toml
+    volumes:
+      - ./examgle-config:/config
